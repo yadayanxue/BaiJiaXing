@@ -1,0 +1,2 @@
+include ':app', ':baijiaxing'
+rootProject.name='BaiJiaXing'
