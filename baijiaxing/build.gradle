@@ -25,6 +25,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 
 }
 
@@ -43,7 +47,7 @@ publish {
     userOrg = 'yadayanxue'
     groupId = 'top.zhangyz'
     artifactId = 'baijiaxing'
-    publishVersion = '1.0'
+    publishVersion = '1.0.1'
     desc = 'Chinese surname to Pinyin'
     website = 'https://github.com/yadayanxue/BaiJiaXing'
     dryRun = false

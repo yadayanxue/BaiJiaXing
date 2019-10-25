@@ -1,4 +1,4 @@
-package top.zhangyz.baijiaxing
+package top.zhangyz.app
 
 import org.junit.Test
 

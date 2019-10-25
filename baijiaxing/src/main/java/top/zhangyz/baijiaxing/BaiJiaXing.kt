@@ -6,7 +6,7 @@ import java.io.InputStreamReader
 
 object BaiJiaXing {
     var baiJiaXingMap = mutableMapOf<String, String>()
-    var preference = 0
+    private var preference = 0
 
     @Synchronized
     fun init(context: Context) {
@@ -14,12 +14,10 @@ object BaiJiaXing {
         if (baiJiaXingMap.isEmpty())
             try {
                 BufferedReader(InputStreamReader(context.assets.open("baijiaxing.map"))).use { reader ->
-                    while (reader.readLine().apply {
+                    while (reader.readLine()?.apply {
                             if (this[0] != '#') {
                                 this.split(" ").let { map ->
                                     if (map.size == 2) {
-                                        baiJiaXingMap[map[0]]?.let {
-                                        }
                                         baiJiaXingMap[map[0]] = map[1]
                                     }
                                 }

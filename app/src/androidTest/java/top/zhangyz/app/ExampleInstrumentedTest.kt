@@ -1,4 +1,4 @@
-package top.zhangyz.baijiaxing
+package top.zhangyz.app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("top.zhangyz.baijiaxing", appContext.packageName)
+        assertEquals("top.zhangyz.app", appContext.packageName)
     }
 }
